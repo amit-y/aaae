@@ -2,10 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAAE v13</title>
 <!-- Le styles -->
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/styles/settings.css" media="screen" />
 <style type="text/css">
 
 #mainNav li.dropdown, .aaae-u-nav li.dropdown {
@@ -182,10 +184,36 @@ text-shadow: 0 0 0.2em #fff, 0 0 0.2em #fff,0 0 0.2em #fff;
 .form-search .input-append .search-query {
 width:140px;
 }
+}
 
-
-
-
+.bannercontainer {
+	padding:0px;
+	background-color:#fff;
+	width:960px;
+	position:relative;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+ 
+.banner{
+	width:960px;
+	height:450px;
+	position:relative;
+	overflow:hidden;
+}
+ 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+      .banner, .bannercontainer { width:760px; height:395px;}
+}
+ 
+ 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+      .banner, .bannercontainer { width:480px; height:250px; }
+}
+ 
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+      .banner, .bannercontainer { width:320px;height:166px; }
 }
 
 </style>
@@ -351,60 +379,40 @@ width:140px;
 
 <div class="container">
 	<div class="row">
-		<div class="span12">
-			<div class="carousel slide" id="myCarousel">
-                <ol class="carousel-indicators">
-                  <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-                  <li data-slide-to="1" data-target="#myCarousel" class=""></li>
-                  <li data-slide-to="2" data-target="#myCarousel" class=""></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="assets/images/1_2_frame.jpg">
-                    <div class="carousel-caption text-center">
-                      <h4>AAAE</h4>
-                      <p>Delivers Experience</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="assets/images/2_2_frame.jpg">
-                    <div class="carousel-caption text-center">
-                      <h4>AAAE</h4>
-                      <p>Delivers Innovation</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="assets/images/3_2_frame.jpg">
-                    <div class="carousel-caption text-center">
-                      <h4>AAAE</h4>
-                      <p>Delivers Training</p>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <img src="assets/images/4_2_frame.jpg">
-                    <div class="carousel-caption text-center">
-                      <h4>AAAE</h4>
-                      <p>Delivers for Airport Executives</p>
-                    </div>
-                  </div>
-                </div>
-                <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
-                <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
-              </div>
-			</div>
-		</div>
-	</div>
-</div>
+		<div class="span10">
+			<div class="bannercontainer">
+				<div class="banner">
+					<ul>
+						<li data-transition="boxslide" data-slotamount="7" data-link="#">
+							<img src="assets/images/1_2_frame.jpg">
+							<div class="caption lfr very_big_black"  data-x="400" data-y="390" data-speed="700" data-start="1700" data-easing="easeOutBack">AAAE</div>
+							<div class="caption sfb medium_light_black"  data-x="360" data-y="450" data-speed="500" data-start="1900" data-easing="easeOutBack">Delivers Experience</div>
+							<!-- <div class="caption lfr medium_grey"  data-x="510" data-y="210" data-speed="300" data-start="2000">Another Message</div> -->
+						</li>
+					</ul>
+				</div><!--/banner-->
+			</div><!--/bannercontainer-->
+		</div><!-- /span10 -->
+		<div class="span2">
+		</div><!-- /span2 -->
+	</div><!-- /row -->
+</div><!-- /container -->
 
 
 
 
 
 
-<script src="//code.jquery.com/jquery-latest.js"></script>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-<script>   
-
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript">   
+   $(document).ready(function() {
+      if ($.fn.cssOriginal!=undefined) $.fn.css = $.fn.cssOriginal;
+      $('.banner').revolution();
+ 
+   });
 </script>
 
 
