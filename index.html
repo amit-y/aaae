@@ -216,6 +216,33 @@ width:140px;
       .banner, .bannercontainer { width:320px;height:166px; }
 }
 
+.view {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff /* url(../images/bgimg.jpg) no-repeat center center */
+}
+.view .mask, .view .content {
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+
+
 </style>
 </head>
 <body><div id="aaae" class="container">
@@ -385,17 +412,76 @@ width:140px;
 					<ul>
 						<li data-transition="boxslide" data-slotamount="7" data-link="#">
 							<img src="assets/images/1_2_frame.jpg">
-							<div class="caption lfr very_big_black"  data-x="400" data-y="390" data-speed="700" data-start="1700" data-easing="easeOutBack">AAAE</div>
-							<div class="caption sfb medium_light_black"  data-x="360" data-y="450" data-speed="500" data-start="1900" data-easing="easeOutBack">Delivers Experience</div>
-							<!-- <div class="caption lfr medium_grey"  data-x="510" data-y="210" data-speed="300" data-start="2000">Another Message</div> -->
+							<div class="caption lfr very_big_black"  data-x="460" data-y="90" data-speed="700" data-start="1700" data-easing="easeOutBack">AAAE</div>
+							<div class="caption sfb medium_light_black"  data-x="420" data-y="150" data-speed="500" data-start="1900" data-easing="easeOutBack">Delivers Experience</div>
+							
+						</li>
+						<li data-transition="boxslide" data-slotamount="7" data-link="#">
+							<img src="assets/images/2_2_frame.jpg">
+							<div class="caption lfr very_big_black"  data-x="100" data-y="140" data-speed="700" data-start="1700" data-easing="easeOutBack">AAAE</div>
+							<div class="caption sfb medium_light_black"  data-x="60" data-y="200" data-speed="500" data-start="1900" data-easing="easeOutBack">Delivers Innovation</div>
+						</li>
+						<li data-transition="boxslide" data-slotamount="7" data-link="#">
+							<img src="assets/images/3_2_frame.jpg">
+							<div class="caption lfr very_big_black"  data-x="400" data-y="10" data-speed="700" data-start="1700" data-easing="easeOutBack">AAAE</div>
+							<div class="caption sfb medium_light_black"  data-x="380" data-y="70" data-speed="500" data-start="1900" data-easing="easeOutBack">Delivers Training</div>
+						</li>
+						<li data-transition="boxslide" data-slotamount="7">
+							<img src="assets/images/4_2_frame.jpg">
+							<div class="caption lfr very_big_black"  data-x="690" data-y="90" data-speed="700" data-start="1700" data-easing="easeOutBack">AAAE</div>
+							<div class="caption lfr medium_light_black"  data-x="705" data-y="150" data-speed="300" data-start="1900">Delivers For</div>
+							<div class="caption sfb medium_light_black"  data-x="660" data-y="180" data-speed="500" data-start="2000" data-easing="easeOutBack">Airport Executives</div>
+							<div class="caption lft " data-x="130" data-y="70" data-speed="500" data-start="1000" data-easing="easeOutBack" data-thumbimage="assets/images/thvid.jpg">
+								<iframe width="420" height="315" src="http://www.youtube.com/embed/oIO41cRKPNA" frameborder="0" allowfullscreen></iframe>
+							</div>
 						</li>
 					</ul>
 				</div><!--/banner-->
 			</div><!--/bannercontainer-->
 		</div><!-- /span10 -->
-		<div class="span2">
+		<div class="span2" style="margin-left: 0;">
+			<div class="view view-side">  
+				<img src="assets/images/NZ2014.jpg" alt="NZ2014" />
+
+			</div>
+			<div class="view view-side">  
+				<img src="assets/images/3_3_thumb.jpg" alt="3_3_thumb" />
+  
+			</div>
+			<div class="view view-side">  
+				<img src="assets/images/5_7_thumb.jpg" alt="5_7_thumb" />
+
+			</div>
+
 		</div><!-- /span2 -->
 	</div><!-- /row -->
+	<hr>
+	<div class="footer">
+		<div class="row">
+			<div class="span6">
+				<small>
+					<a href="#">Privacy Policy</a>
+					&nbsp;&middot;&nbsp;
+					<a href="#">Contact Us</a>
+					<br/>
+					&copy; 2013 America Association of Airport Executives
+				</small>
+			</div><!--/span6-->
+			<div class="span6 text-right">
+				<div class="pagination" style="margin-top: 0;">
+					<ul>
+						<li><a class="" href="#"><i class="icon-facebook"></i></a></li>
+						<li><a class="" href="#"><i class="icon-twitter"></i></a></li>
+						<li><a class="" href="#"><i class="icon-linkedin"></i></a></li>
+						<li><a class="" href="#"><i class="icon-book"></i></a></li>
+						<li><a class="" href="#"><i class="icon-youtube"></i></a></li>
+						<li><a class="" href="#"><i class="icon-pinterest"></i></a></li>
+						<li><a class="" href="#"><i class="icon-rss"></i></a></li>
+					</ul>
+				</div>
+			</div><!--/span6-->
+		</div><!--/row-->
+	</div><!--/footer-->
 </div><!-- /container -->
 
 
